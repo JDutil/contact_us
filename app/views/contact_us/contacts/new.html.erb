@@ -1,0 +1,6 @@
+<h2>Contact Us</h2>
+<%= semantic_form_for @contact, :url => contacts_path do |f| %>
+  <%= f.input :email %>
+  <%= f.input :message, :as => :text %>
+  <%= f.commit_button "Submit", :button_html => { :title => 'Submit' } %>
+<% end %>
