@@ -37,7 +37,9 @@ namespace :contact_us do
     end
 
     print "Now copying view files for customization!\n"
-
+    unless File.directory?(Rails.root.join('app/views/contact_us'))
+      Rails.root.join('app/views/contact_us').mkdir
+    end
     locales_path = gem_path + "/app/views/contact_us/contact_mailer/*"
     app_path = Rails.root.join("app/views/contact_us/contact_mailer")
     unless File.directory?(app_path)
