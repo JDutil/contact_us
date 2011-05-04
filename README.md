@@ -11,7 +11,7 @@ Contact Us requires the Formtastic Gem.  Read more about Formtastic @ https://gi
 In your `Gemfile`, add the following dependencies:
 
     gem 'formtastic'
-    gem 'contact_us', '~> 0.0.3'
+    gem 'contact_us', '~> 0.0.4'
 
 From `Rails.root` run:
 
