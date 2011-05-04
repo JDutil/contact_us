@@ -9,15 +9,13 @@ Contact Us requires the Formtastic Gem.  Read more about Formtastic @ https://gi
 INSTALL
 -------
 In your `Gemfile`, add the following dependencies:
-```
-gem 'formtastic'
-gem 'contact_us'
-```
+
+    gem 'formtastic'
+    gem 'contact_us'
 
 Run:
-```
-$ bundle install
-```
+
+    $ bundle install
 
 CONFIGURATION
 -------------
