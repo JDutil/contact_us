@@ -21,7 +21,7 @@ class ContactUs::Contact
 
   def save
     if self.valid?
-      ContactUs::ContactMailer.contact_email(self).deliver
+      ContactMailer.contact_email(self).deliver
       return true
     end
     return false
