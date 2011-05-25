@@ -17,16 +17,18 @@ From `Rails.root` run:
 
     $ bundle install
     $ rake contact_us:install
-    
-Modify the installed initializer's mailer to settings to use your own email address.
+
+In `config/initializers/contact_us.rb` modify:
+
+    config.mailer_to = "contact@please-change-me.com"
+
+Change to the email address you would like to receive the form submissions at for example:
+
+    config.mailer_to = "contact@yourdomain.com"
 
 ## CONFIGURATION
 
-The installation generator creates the `contact_us.rb` initializer within your apps `config/initializers` directory.
-
-Modify the mailer to setting to be where you would like to send the contact form emails.
-
-The generator has also copied the view files to `app/views/contact_us`, and you can customize them to suit your needs.
+The generator copies the view files to `app/views/contact_us`, and you can customize them to suit your needs.
 
 ## TODO
 
