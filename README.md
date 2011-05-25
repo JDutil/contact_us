@@ -10,8 +10,8 @@ Contact Us requires the Formtastic Gem.  Read more about Formtastic @ https://gi
 
 In your `Gemfile`, add the following dependencies:
 
-    gem 'formtastic'
-    gem 'contact_us', '~> 0.0.4'
+    gem 'formtastic', '~> 1.2.0'
+    gem 'contact_us', '~> 0.0.5'
 
 From `Rails.root` run:
 
