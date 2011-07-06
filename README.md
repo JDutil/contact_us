@@ -10,8 +10,7 @@ Contact Us requires the Formtastic Gem.  Read more about Formtastic @ https://gi
 
 In your `Gemfile`, add the following dependencies:
 
-    gem 'formtastic', '~> 1.2.0'
-    gem 'contact_us', '~> 0.0.5'
+    gem 'contact_us', '~> 0.0.6'
 
 From `Rails.root` run:
 
@@ -30,9 +29,10 @@ Change to the email address you would like to receive the form submissions at fo
 
 The generator copies the view files to `app/views/contact_us`, and you can customize them to suit your needs.
 
+You may also update your locales under `config/locales/contact_us.en.yml` or create your own.  Please feel free to submit your own locales so that other users will hopefully find this gem more useful.
+
 ## TODO
 
 * 100% test coverage
-* i18n
 
 Copyright (c) 2011 Jeff Dutil, released under the MIT license.

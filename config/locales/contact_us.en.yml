@@ -3,4 +3,12 @@
 
 en:
   contact_us:
-    sent_by: "Sent by "
+    contact_mailer:
+      contact_email:
+        sent_by_contact_form: "Sent by contact form."
+    contacts:
+      new:
+        contact_us: "Contact Us"
+        email: "Email"
+        message: "Message"
+        submit: "Submit"

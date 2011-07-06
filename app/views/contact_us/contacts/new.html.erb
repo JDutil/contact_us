@@ -1,6 +1,6 @@
-<h2>Contact Us</h2>
+<h2><%= t('.contact_us') %></h2>
 <%= semantic_form_for @contact, :url => contacts_path do |f| %>
-  <%= f.input :email %>
-  <%= f.input :message, :as => :text %>
-  <%= f.commit_button "Submit", :button_html => { :title => 'Submit' } %>
+  <%= f.input :email, :label => t('.email') %>
+  <%= f.input :message, :as => :text, :label => t('.message') %>
+  <%= f.commit_button t('.submit'), :button_html => { :alt => t('.submit'), :title => t('.submit') } %>
 <% end %>
