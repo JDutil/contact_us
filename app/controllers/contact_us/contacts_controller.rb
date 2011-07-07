@@ -8,9 +8,9 @@ class ContactUs::ContactsController < ApplicationController
     @contact = ContactUs::Contact.new(params[:contact_us_contact])
     
     if @contact.save    
-      redirect_to('/', :notice => "Contact email was successfully sent.")
+      redirect_to('/', :notice => t('contact_us.notices.success'))
     else
-      flash[:error] = "You must enter both fields."
+      flash[:error] = t('contact_us.notices.error')
       render :new
     end
   end
