@@ -13,5 +13,5 @@ en:
         message: "Message"
         submit: "Submit"
     notices:
-      error: "You must enter both fields.s"
+      error: "You must enter both fields."
       success: "Contact email was successfully sent."
