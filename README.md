@@ -31,6 +31,27 @@ The generator copies the view files to `app/views/contact_us`, and you can custo
 
 You may also update your locales under `config/locales/contact_us.en.yml` or create your own.  Please feel free to submit your own locales so that other users will hopefully find this gem more useful.
 
+## ISSUES
+
+Please report any bugs or feature requests to the Github issues page @ https://github.com/jdutil/contact_us/issues
+
+## CONTRIBUTING
+
+In the spirit of [free software](http://www.fsf.org/licensing/essays/free-sw.html), **everyone** is encouraged to help improve this project.
+
+Here are some ways *you* can contribute:
+
+* by using prerelease versions
+* by reporting bugs
+* by suggesting new features
+* by [translating to a new language](https://github.com/jdutil/contact_us/tree/master/config/locales)
+* by writing or editing documentation
+* by writing specifications
+* by writing code (**no patch is too small**: fix typos, add comments, clean up inconsistent whitespace)
+* by refactoring code
+* by resolving [issues](https://github.com/jdutil/contact_us/issues)
+* by reviewing patches
+
 ## TODO
 
 * 100% test coverage
