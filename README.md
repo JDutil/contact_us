@@ -31,6 +31,10 @@ The generator copies the view files to `app/views/contact_us`, and you can custo
 
 You may also update your locales under `config/locales/contact_us.en.yml` or create your own.  Please feel free to submit your own locales so that other users will hopefully find this gem more useful.
 
+## USAGE
+
+Visit your website and navigate to `/contact_us` to see the form in action.
+
 ## ISSUES
 
 Please report any bugs or feature requests to the Github issues page @ https://github.com/jdutil/contact_us/issues
@@ -56,4 +60,4 @@ Here are some ways *you* can contribute:
 
 * 100% test coverage
 
-Copyright (c) 2011 Jeff Dutil, released under the MIT license.
+Copyright (c) 2011 Jeff Dutil, released under the [MIT license](https://github.com/jdutil/contact_us/tree/master/MIT-LICENSE).
