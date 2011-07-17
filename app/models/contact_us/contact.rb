@@ -1,12 +1,12 @@
 class ContactUs::Contact
   include ActiveModel::Validations
 
-  validates :email, :presence => true,
-                    :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i }
+  validates :email,   :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i },
+                      :presence => true
   validates :message, :presence => true
 
-  # to deal with form, you must have an id attribute
-  attr_accessor :id, :email, :message
+  # To deal with the form, you must have an id attribute
+  attr_accessor :email, :id, :message
 
   def initialize(attributes = {})
     attributes.each do |key, value|
@@ -19,8 +19,6 @@ class ContactUs::Contact
     @attributes[key]
   end
 
-  def to_key; end
-
   def save
     if self.valid?
       ContactUs::ContactMailer.contact_email(self).deliver
@@ -28,4 +26,7 @@ class ContactUs::Contact
     end
     return false
   end
+
+  def to_key; end
+
 end
