@@ -2,6 +2,8 @@
 
 A Rails 3 Engine providing a basic contact form.  I used Formtastic to keep things simple, and to hook into your apps custom Formtastic stylesheets.
 
+[![Build Status](http://travis-ci.org/jdutil/contact_us.png)](http://travis-ci.org/jdutil/contact_us)
+
 ## REQUIREMENTS
 
 Contact Us requires the Formtastic Gem.  Read more about Formtastic @ https://github.com/justinfrench/formtastic
