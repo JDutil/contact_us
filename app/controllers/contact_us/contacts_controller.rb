@@ -3,7 +3,7 @@ class ContactUs::ContactsController < ApplicationController
   def create
     @contact = ContactUs::Contact.new(params[:contact_us_contact])
 
-    if @contact.save    
+    if @contact.save
       redirect_to('/', :notice => t('contact_us.notices.success'))
     else
       flash[:error] = t('contact_us.notices.error')
@@ -12,7 +12,7 @@ class ContactUs::ContactsController < ApplicationController
   end
 
   def new
-    @contact = ContactUs::Contact.new(:id=>1)
+    @contact = ContactUs::Contact.new
   end
 
 end

@@ -2,15 +2,6 @@ require 'spec_helper'
 
 describe ContactUs::Contact do
 
-  describe 'Attribute Accessors' do
-    it { subject.should respond_to(:email) }
-    it { subject.should respond_to(:email=) }
-    it { subject.should respond_to(:id) }
-    it { subject.should respond_to(:id=) }
-    it { subject.should respond_to(:message) }
-    it { subject.should respond_to(:message=) }
-  end
-
   describe "Validations" do
 
     it 'should validate email presence' do

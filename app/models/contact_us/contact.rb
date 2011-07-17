@@ -1,12 +1,11 @@
 class ContactUs::Contact
   include ActiveModel::Validations
 
+  attr_accessor :email, :message
+
   validates :email,   :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i },
                       :presence => true
   validates :message, :presence => true
-
-  # To deal with the form, you must have an id attribute
-  attr_accessor :email, :id, :message
 
   def initialize(attributes = {})
     attributes.each do |key, value|
@@ -27,6 +26,7 @@ class ContactUs::Contact
     return false
   end
 
+  # To deal with the form, model must respond to #to_key
   def to_key; end
 
 end
