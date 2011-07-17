@@ -1,7 +1,9 @@
 class ContactUs::Contact
   include ActiveModel::Validations
 
-  validates_presence_of :email, :message
+  validates :email, :presence => true,
+                    :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i }
+  validates :message, :presence => true
 
   # to deal with form, you must have an id attribute
   attr_accessor :id, :email, :message
