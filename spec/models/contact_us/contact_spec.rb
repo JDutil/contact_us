@@ -4,8 +4,11 @@ describe ContactUs::Contact do
 
   describe 'Attribute Accessors' do
     it { subject.should respond_to(:email) }
+    it { subject.should respond_to(:email=) }
     it { subject.should respond_to(:id) }
+    it { subject.should respond_to(:id=) }
     it { subject.should respond_to(:message) }
+    it { subject.should respond_to(:message=) }
   end
 
   describe "Validations" do
@@ -43,10 +46,6 @@ describe ContactUs::Contact do
       end
     end
 
-    describe '#to_key' do
-      it { subject.should respond_to(:to_key) }
-    end
-
     describe '#save' do
 
       it 'should return false if records invalid' do
@@ -62,6 +61,10 @@ describe ContactUs::Contact do
         contact.save.should eql(true)
       end
 
+    end
+
+    describe '#to_key' do
+      it { subject.should respond_to(:to_key) }
     end
 
   end

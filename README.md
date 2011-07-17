@@ -58,7 +58,8 @@ Here are some ways *you* can contribute:
 
 ## TODO
 
-* 100% test coverage
+* Integration tests
+* Installation tests
 * Rails 3.1 Asset Pipeline
 
 Copyright (c) 2011 Jeff Dutil, released under the [MIT license](https://github.com/jdutil/contact_us/tree/master/MIT-LICENSE).

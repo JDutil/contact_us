@@ -1,12 +1,8 @@
 class ContactUs::ContactsController < ApplicationController
-  
-  def new
-    @contact = ContactUs::Contact.new(:id=>1)
-  end
 
   def create
     @contact = ContactUs::Contact.new(params[:contact_us_contact])
-    
+
     if @contact.save    
       redirect_to('/', :notice => t('contact_us.notices.success'))
     else
@@ -14,4 +10,9 @@ class ContactUs::ContactsController < ApplicationController
       render :new
     end
   end
+
+  def new
+    @contact = ContactUs::Contact.new(:id=>1)
+  end
+
 end
