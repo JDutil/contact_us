@@ -15,7 +15,7 @@ In your `Gemfile`, add the following dependencies:
 From `Rails.root` run:
 
     $ bundle
-    $ rake contact_us:install
+    $ bundle exec rake contact_us:install
 
 In `config/initializers/contact_us.rb` modify:
 
