@@ -1,6 +1,6 @@
 # Contact Us
 
-A Rails 3 Engine providing a basic contact form.  I used Formtastic to keep things simple, and to hook into your apps custom Formtastic stylesheets.
+A Rails 3+ Engine providing a basic contact form.  I used Formtastic to keep things simple, and to hook into your apps custom Formtastic stylesheets.
 
 ## REQUIREMENTS
 
