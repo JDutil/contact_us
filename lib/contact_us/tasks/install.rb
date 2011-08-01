@@ -9,17 +9,17 @@ module ContactUs
           copy_initializer_file
           copy_locales_files
           copy_view_files
-          puts "Done."
+          puts "Done!"
         end
 
         def copy_initializer_file
-          print "Now copying initializer file "
+          print "Copying initializer file...\n"
           app_path = Rails.root.join("config/initializers")
           copier.copy_file File.join(gem_path, 'lib/templates/contact_us.rb'), File.join(app_path, 'contact_us.rb')
         end
 
         def copy_locales_files
-          print "Now copying locales files! "
+          print "Copying locales files...\n"
           locales_path = gem_path + "/config/locales/*.yml"
           app_path = Rails.root.join("config/locales")
 
@@ -33,10 +33,10 @@ module ContactUs
         end
 
         def copy_view_files
-          print "Now copying view files "
+          print "Copying view files...\n"
           origin = File.join(gem_path, 'app/views')
           destination = Rails.root.join('app/views')
-          puts copy_files(['.'], origin, destination)
+          copy_files(['.'], origin, destination)
         end
 
         private
