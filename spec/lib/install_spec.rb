@@ -17,9 +17,9 @@ describe "Rake tasks" do
       @destination_root = File.expand_path("../../dummy", __FILE__)
       File.exists?(@destination_root + "/config/initializers/contact_us.rb").should eql(false)
       File.exists?(@destination_root + "/config/locales/contact_us.en.yml").should eql(false)
-      Dir.exists?(@destination_root + "/app/views/contact_us").should eql(false)
-      Dir.exists?(@destination_root + "/app/views/contact_us/contact_mailer").should eql(false)
-      Dir.exists?(@destination_root + "/app/views/contact_us/contacts").should eql(false)
+      File.directory?(@destination_root + "/app/views/contact_us").should eql(false)
+      File.directory?(@destination_root + "/app/views/contact_us/contact_mailer").should eql(false)
+      File.directory?(@destination_root + "/app/views/contact_us/contacts").should eql(false)
 
       silence_stream(STDOUT) { ContactUs::Tasks::Install.run }
     end
