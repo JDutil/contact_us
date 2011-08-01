@@ -2,7 +2,7 @@
 
 A Rails 3+ Engine providing a basic contact form.  I used Formtastic to keep things simple, and to hook into your apps custom Formtastic stylesheets.
 
-[![Build Status](http://travis-ci.org/jdutil/contact_us.png)](http://travis-ci.org/jdutil/contact_us)
+[![Build Status](https://secure.travis-ci.org/jdutil/contact_us.png)](http://travis-ci.org/jdutil/contact_us)
 
 ## REQUIREMENTS
 
