@@ -60,7 +60,6 @@ Here are some ways *you* can contribute:
 
 ## TODO
 
-* spec for rake contact_us:install
 * Add new language translations
 
 Copyright (c) 2011 Jeff Dutil, released under the [MIT license](https://github.com/jdutil/contact_us/tree/master/MIT-LICENSE).

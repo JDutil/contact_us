@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe "Navigation" do
-  include Capybara
 
   it "should be a valid app" do
     ::Rails.application.should be_a(Dummy::Application)
@@ -58,7 +57,7 @@ describe "Navigation" do
             end
 
             it "I should see two error messages" do
-              page.should have_content 'is invalid'
+              page.should have_content "is invalid"
               page.should have_content "can't be blank"
             end
             

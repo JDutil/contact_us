@@ -1,3 +1,5 @@
+require File.dirname(__FILE__) + '/../lib/contact_us/tasks/install'
+
 # Configure Rails Envinronment
 ENV["RAILS_ENV"] = "test"
 
@@ -5,9 +7,9 @@ require 'simplecov'
 SimpleCov.start do
   add_filter '/config/'
   add_group 'Controllers', 'app/controllers'
+  add_group 'Helpers', 'app/helpers'
   add_group 'Mailers', 'app/mailers'
   add_group 'Models', 'app/models'
-  add_group 'Helpers', 'app/helpers'
   add_group 'Libraries', 'lib'
   add_group 'Specs', 'spec'
 end
@@ -30,12 +32,8 @@ Capybara.default_selector = :css
 # Run any available migration
 ActiveRecord::Migrator.migrate File.expand_path("../dummy/db/migrate/", __FILE__)
 
-# Load support files
-Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
-
 RSpec.configure do |config|
-  # Remove this line if you don't want RSpec's should and should_not
-  # methods or matchers
+  # Remove this line if you don't want RSpec's should and should_not methods or matchers
   require 'rspec/expectations'
   config.include RSpec::Matchers
 
