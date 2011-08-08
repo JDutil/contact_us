@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe ContactUs::Contact do
+  it_should_behave_like 'ActiveModel'
 
   describe "Validations" do
 
