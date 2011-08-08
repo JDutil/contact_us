@@ -1,4 +1,5 @@
 class ContactUs::Contact
+  include ActiveModel::Conversion
   include ActiveModel::Validations
 
   attr_accessor :email, :message
@@ -11,11 +12,6 @@ class ContactUs::Contact
     attributes.each do |key, value|
       self.send("#{key}=", value)
     end
-    @attributes = attributes
-  end
-
-  def read_attribute_for_validation(key)
-    @attributes[key]
   end
 
   def save
@@ -25,8 +21,9 @@ class ContactUs::Contact
     end
     return false
   end
-
-  # To deal with the form, model must respond to #to_key
-  def to_key; end
+  
+  def persisted?
+    false
+  end
 
 end
