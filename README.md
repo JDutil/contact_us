@@ -12,7 +12,7 @@ Contact Us requires the Formtastic Gem.  Read more about Formtastic @ https://gi
 
 In your `Gemfile`, add the following dependencies:
 
-    gem 'contact_us', '~> 0.1.1'
+    gem 'contact_us', '~> 0.1.2'
 
 From `Rails.root` run:
 
