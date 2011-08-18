@@ -28,7 +28,7 @@ describe ContactUs::ContactMailer do
       end
 
       it "should have the message in the body" do
-        @mailer.body.should match("<p>Thanks!<p>")
+        @mailer.body.should match("<p>Thanks!</p>")
       end
 
       it "should deliver successfully" do

@@ -37,6 +37,12 @@ You may also update your locales under `config/locales/contact_us.en.yml` or cre
 
 Visit your website and navigate to `/contact_us` to see the form in action.
 
+## INTEGRATION TESTS
+
+Contact Us has 100% test coverage, and provides simple integration specs you can drop directly into your apps test suite if you use RSpec & Capybara.
+
+Simply copy the `spec/integration/contact_us_lint_spec.rb` file, and add it to your integration specs. 
+
 ## ISSUES
 
 Please report any bugs or feature requests to the Github issues page @ https://github.com/jdutil/contact_us/issues
