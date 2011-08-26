@@ -4,6 +4,10 @@ A Rails 3+ Engine providing a basic contact form.  I used Formtastic to keep thi
 
 [![Build Status](https://secure.travis-ci.org/jdutil/contact_us.png)](http://travis-ci.org/jdutil/contact_us)
 
+There is also a demo application showing how the ContactUs form works:
+[View Demo Form In Action](http://contact-us-demo.heroku.com)
+[View Demo Applications Source Code](http://github.com/jdutil/contact_us_demo)
+
 ## REQUIREMENTS
 
 Contact Us requires the Formtastic Gem.  Read more about Formtastic @ https://github.com/justinfrench/formtastic
