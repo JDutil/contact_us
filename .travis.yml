@@ -5,6 +5,7 @@ rvm:
   - 1.9.3
   - ree
   - ruby-head
+  - rbx-2.0
 notifications:
   recipients:
     - JDutil@BurlingtonWebApps.com
