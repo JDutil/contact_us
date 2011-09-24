@@ -1,0 +1,17 @@
+# Sample localization file for German. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+de:
+  contact_us:
+    contact_mailer:
+      contact_email:
+        sent_by_contact_form: "Gesendet durch das Kontaktformular."
+    contacts:
+      new:
+        contact_us: "Kontaktiere Uns"
+        email: "Email"
+        message: "Nachricht"
+        submit: "Abschicken"
+    notices:
+      error: "Beide Felder müssen ausgefüllt werden."
+      success: "Die Nachricht wurde erfolgreich versendet."
