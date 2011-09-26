@@ -27,6 +27,10 @@ describe ContactUs::ContactMailer do
         @mailer.from.should eql([@contact.email])
       end
 
+      it "should have users email in the subject line" do
+        @mailer.subject.should eql("Contact Us message from #{@contact.email}")
+      end
+
       it "should have the message in the body" do
         @mailer.body.should match("<p>Thanks!</p>")
       end

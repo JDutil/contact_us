@@ -6,7 +6,6 @@ de:
     contact_mailer:
       contact_email:
         sent_by_contact_form: "Gesendet durch das Kontaktformular."
-        subject: "Contact Us message from %{email}"
     contacts:
       new:
         contact_us: "Kontaktiere Uns"

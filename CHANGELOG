@@ -2,6 +2,8 @@
 
 * Added German locale
 
+* Email subject is now included in i18n
+
 *ContactUs 0.1.3 (September 2, 2011)*
 
 * Added Brazilian Portuguese locale [brunoarueira]

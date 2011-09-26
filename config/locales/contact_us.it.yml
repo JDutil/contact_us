@@ -6,6 +6,7 @@ it:
     contact_mailer:
       contact_email:
         sent_by_contact_form: "Inviato dal formato di contatto."
+        subject: "Contact Us message from %{email}"
     contacts:
       new:
         contact_us: "Contattaci"
