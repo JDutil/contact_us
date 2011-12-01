@@ -27,6 +27,7 @@ describe 'Contact Us page' do
 
     context "when valid" do
       before do
+        ContactUs.mailer_to = 'test@test.com'
         fill_in 'Email', :with => 'test@example.com'
         fill_in 'Message', :with => 'howdy'
         click_button 'Submit'
@@ -42,7 +43,7 @@ describe 'Contact Us page' do
 
       it "The email should have the correct attributes" do
         mail = ActionMailer::Base.deliveries.last
-        mail.to.should == ['contact@please-change-me.com']
+        mail.to.should == ['test@test.com']
         mail.from.should == ['test@example.com']
         mail.body.should match 'howdy'
       end
