@@ -20,8 +20,7 @@ describe "Rake tasks" do
       File.directory?(@destination_root + "/app/views/contact_us").should eql(false)
       File.directory?(@destination_root + "/app/views/contact_us/contact_mailer").should eql(false)
       File.directory?(@destination_root + "/app/views/contact_us/contacts").should eql(false)
-
-      silence_stream(STDOUT) { ContactUs::Tasks::Install.run }
+      ContactUs::Tasks::Install.run
     end
 
     it "creates initializer file" do
