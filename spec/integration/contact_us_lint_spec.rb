@@ -42,7 +42,7 @@ describe 'Contact Us page' do
 
       it "The email should have the correct attributes" do
         mail = ActionMailer::Base.deliveries.last
-        mail.to.should == [ContactUs.mailer_to]
+        mail.to.should == ['contact@please-change-me.com']
         mail.from.should == ['test@example.com']
         mail.body.should match 'howdy'
       end
