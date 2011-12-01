@@ -77,5 +77,6 @@ Here are some ways *you* can contribute:
 ## TODO
 
 * Add new language translations
+* Make requested configurations in branches that users can reference in their Gemfile rather than the version.  This would allow for popular requests like adding a name, subject, or both to the form while also keeping the minimalist approach in master.
 
 Copyright (c) 2011 Jeff Dutil, released under the [MIT license](https://github.com/jdutil/contact_us/tree/master/MIT-LICENSE).
