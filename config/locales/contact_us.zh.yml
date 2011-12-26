@@ -1,0 +1,17 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+zh:
+  contact_us:
+    contact_mailer:
+      contact_email:
+        sent_by_contact_form: "由contact form发送。"
+    contacts:
+      new:
+        contact_us: "联系我们"
+        email: "邮箱"
+        message: "消息"
+        submit: "发送"
+    notices:
+      error: "请正确输入邮箱与信息。"
+      success: "邮件已成功发送。"
