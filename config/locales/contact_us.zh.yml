@@ -6,6 +6,7 @@ zh:
     contact_mailer:
       contact_email:
         sent_by_contact_form: "由contact form发送。"
+        subject: "Contact Us message from %{email}"
     contacts:
       new:
         contact_us: "联系我们"
