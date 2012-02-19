@@ -3,15 +3,17 @@ require File.dirname(__FILE__) + '/../lib/contact_us/tasks/install'
 # Configure Rails Envinronment
 ENV["RAILS_ENV"] = "test"
 
-require 'simplecov'
-SimpleCov.start do
-  add_filter '/config/'
-  add_group 'Controllers', 'app/controllers'
-  add_group 'Helpers', 'app/helpers'
-  add_group 'Mailers', 'app/mailers'
-  add_group 'Models', 'app/models'
-  add_group 'Libraries', 'lib'
-  add_group 'Specs', 'spec'
+unless defined?(Rubinius).present? or RUBY_VERSION == '1.8.7'
+  require 'simplecov'
+  SimpleCov.start do
+    add_filter '/config/'
+    add_group 'Controllers', 'app/controllers'
+    add_group 'Helpers', 'app/helpers'
+    add_group 'Mailers', 'app/mailers'
+    add_group 'Models', 'app/models'
+    add_group 'Libraries', 'lib'
+    add_group 'Specs', 'spec'
+  end
 end
 
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
