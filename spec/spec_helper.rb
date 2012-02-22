@@ -3,6 +3,10 @@ require File.dirname(__FILE__) + '/../lib/contact_us/tasks/install'
 # Configure Rails Envinronment
 ENV["RAILS_ENV"] = "test"
 
+require File.expand_path("../dummy/config/environment.rb",  __FILE__)
+require "rails/test_help"
+require "rspec/rails"
+
 unless defined?(Rubinius).present? or RUBY_VERSION == '1.8.7'
   require 'simplecov'
   SimpleCov.start do
@@ -15,10 +19,6 @@ unless defined?(Rubinius).present? or RUBY_VERSION == '1.8.7'
     add_group 'Specs', 'spec'
   end
 end
-
-require File.expand_path("../dummy/config/environment.rb",  __FILE__)
-require "rails/test_help"
-require "rspec/rails"
 
 ActionMailer::Base.delivery_method = :test
 ActionMailer::Base.perform_deliveries = true
