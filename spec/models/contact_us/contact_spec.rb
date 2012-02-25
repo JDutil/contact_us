@@ -5,25 +5,26 @@ describe ContactUs::Contact do
 
   describe "Validations" do
 
-    it 'should validate email presence' do
-      contact = ContactUs::Contact.new(:email => "", :message => "Test")
-      contact.valid?.should eql(false)
-      contact = ContactUs::Contact.new(:email => "Valid@Email.com", :message => "Test")
-      contact.valid?.should eql(true)
-    end
+    it {should validate_presence_of(:email)}
+    it {should validate_presence_of(:message)}
+    it {should_not validate_presence_of(:name)}
+    it {should_not validate_presence_of(:subject)}
 
-    it 'should validate email format' do
-      contact = ContactUs::Contact.new(:email => "Invalid", :message => "Test")
-      contact.valid?.should eql(false)
-      contact = ContactUs::Contact.new(:email => "Valid@Email.com", :message => "Test")
-      contact.valid?.should eql(true)
-    end
+    context 'with name and subject settings' do
 
-    it 'should validate message presence' do
-      contact = ContactUs::Contact.new(:email => "Valid@Email.com", :message => "")
-      contact.valid?.should eql(false)
-      contact = ContactUs::Contact.new(:email => "Valid@Email.com", :message => "Test")
-      contact.valid?.should eql(true)
+      after do
+        ContactUs.require_name = false
+        ContactUs.require_subject = false
+      end
+
+      before do
+        ContactUs.require_name = true
+        ContactUs.require_subject =true
+      end
+
+      it {should validate_presence_of(:name)}
+      it {should validate_presence_of(:subject)}
+
     end
 
   end

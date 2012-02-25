@@ -5,13 +5,16 @@ de:
   contact_us:
     contact_mailer:
       contact_email:
-        sent_by_contact_form: "Gesendet durch das Kontaktformular."
+        sent_by_contact_form: "Gesendet durch das Kontaktformular. %{email}"
+        sent_by_name: "Sent by %{name} from %{email}"
         subject: "Contact Us message from %{email}"
     contacts:
       new:
         contact_us: "Kontaktiere Uns"
         email: "Email"
         message: "Nachricht"
+        name: "Name"
+        subject: "Subject"
         submit: "Abschicken"
     notices:
       error: "Beide Felder müssen ausgefüllt werden."

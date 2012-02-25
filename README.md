@@ -38,9 +38,29 @@ Change to the email address you would like to receive the form submissions at fo
 
     config.mailer_to = "contact@yourdomain.com"
 
+By default the emails from field will be the email entered by the user to easily reply, but this may not be allowed if your required to verify your sending email addresses.
+You may also specify an email address for the notification emails from field:
+
+    config.mailer_from = "dontreply@yourdomain.com"
+
+## UPGRADING
+
+When upgrading from 0.1.x to 0.2.x you should rerun the install generator to install the new settings, views, and locale updates:
+
+    $ bundle exec rake contact_us:install
+
+Or you may run the generators for each specific component you would like to update, which is quite useful when upgrading during patch releases for example from 0.2.0 to 0.2.1:
+
+    $ bundle exec rake contact_us:copy_locales
+    $ bundle exec rake contact_us:copy_views
+
 ## CONFIGURATION
 
-The generator copies the view files to `app/views/contact_us`, and you can customize them to suit your needs.
+The generator copies the view files to `app/views/contact_us`, and you can customize them to suit your needs.  If you would like to add a name or subject field to the form you may simply
+set the options to true within the contact_us initializer located at `config/initializers/contact_us.rb`:
+
+    config.name = true
+    config.subject = true
 
 You may also update your locales under `config/locales/contact_us.en.yml` or create your own.  Please feel free to submit your own locales so that other users will hopefully find this gem more useful.
 
@@ -78,6 +98,5 @@ Here are some ways *you* can contribute:
 ## TODO
 
 * Add new language translations
-* Make requested configurations in branches, and document how to reference within your Gemfile rather than the version.  Configurations todo: with name, with subject, with name & subject
 
 Copyright (c) 2011 Jeff Dutil, released under the [MIT license](https://github.com/jdutil/contact_us/tree/master/MIT-LICENSE).

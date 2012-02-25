@@ -1,3 +1,3 @@
-<p><%= @message %></p>
+<p><%= @contact.message %></p>
 <p>---------------------</p>
-<p><%= t('.sent_by_contact_form') %></p>
+<p><%= ContactUs.require_name ? t('.sent_by_name', :email => @contact.email, :name => @contact.name) : t('.sent_by_contact_form', :email => @contact.email) %></p>

@@ -4,7 +4,7 @@ describe ContactUs::ContactMailer do
 
   describe "#contact_email" do
 
-    before(:each) do
+    before do
       ContactUs.mailer_to = "contact@please-change-me.com"
       @contact = ContactUs::Contact.new(:email => 'test@email.com', :message => 'Thanks!')
     end
@@ -13,9 +13,16 @@ describe ContactUs::ContactMailer do
       lambda { ContactUs::ContactMailer.contact_email(@contact) }.should_not raise_error
     end
 
+    it "should use the ContactUs.mailer_from setting when it is set" do
+      ContactUs.mailer_from = "contact@please-change-me.com"
+      @mailer = ContactUs::ContactMailer.contact_email(@contact)
+      @mailer.from.should eql([ContactUs.mailer_from])
+      ContactUs.mailer_from = nil
+    end
+
     describe "rendered without error" do
 
-      before(:each) do
+      before do
         @mailer = ContactUs::ContactMailer.contact_email(@contact)
       end
 
@@ -23,7 +30,7 @@ describe ContactUs::ContactMailer do
         @mailer.to.should eql([ContactUs.mailer_to])
       end
 
-      it "should have users email in the from field" do
+      it "should use the users email in the from field when ContactUs.mailer_from is not set" do
         @mailer.from.should eql([@contact.email])
       end
 

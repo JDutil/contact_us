@@ -2,3 +2,4 @@
 --format=nested
 --backtrace
 --profile
+--order random

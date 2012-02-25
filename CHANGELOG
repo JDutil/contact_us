@@ -1,3 +1,11 @@
+*ContactUs 0.2.0 (February 25th 2012)*
+
+* Added ContactUs.mailer_from setting in order to send from verified address, which is better practice than pretending the email is from the user. [Jeff Dutil]
+
+* Added ContactUs.require_name setting in order to ask for the name with the contact form. [Jeff Dutil]
+
+* Added ContactUs.require_subject setting in order to for the subject with the contact form. [Jeff Dutil]
+
 *ContactUs 0.1.5 (January 6th, 2012)*
 
 * Added Chinese zh locale [kinopyo]

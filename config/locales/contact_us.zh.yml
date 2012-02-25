@@ -5,13 +5,16 @@ zh:
   contact_us:
     contact_mailer:
       contact_email:
-        sent_by_contact_form: "由contact form发送。"
+        sent_by_contact_form: "由contact form发送。 %{email}"
+        sent_by_name: "Sent by %{name} from %{email}"
         subject: "Contact Us message from %{email}"
     contacts:
       new:
         contact_us: "联系我们"
         email: "邮箱"
         message: "消息"
+        name: "Name"
+        subject: "Subject"
         submit: "发送"
     notices:
       error: "请正确输入邮箱与信息。"

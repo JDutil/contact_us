@@ -5,13 +5,16 @@ pt-BR:
   contact_us:
     contact_mailer:
       contact_email:
-        sent_by_contact_form: "Enviado pelo formulário de contato."
+        sent_by_contact_form: "Enviado pelo formulário de contato. %{email}"
+        sent_by_name: "Sent by %{name} from %{email}"
         subject: "Contact Us message from %{email}"
     contacts:
       new:
         contact_us: "Contate-nos"
         email: "Email"
         message: "Messagem"
+        name: "Name"
+        subject: "Subject"
         submit: "Enviar"
     notices:
       error: "Você deve preencher os campos."

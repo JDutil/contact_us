@@ -5,13 +5,16 @@ es:
   contact_us:
     contact_mailer:
       contact_email:
-        sent_by_contact_form: "Enviado por el formulario de contacto."
+        sent_by_contact_form: "Enviado por el formulario de contacto. %{email}"
+        sent_by_name: "Sent by %{name} from %{email}"
         subject: "Contact Us message from %{email}"
     contacts:
       new:
         contact_us: "Contactanos"
         email: "Email"
         message: "Mensaje"
+        name: "Name"
+        subject: "Subject"
         submit: "Enviar"
     notices:
       error: "Debes de ingresar ambos campos."
