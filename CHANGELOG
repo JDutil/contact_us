@@ -6,6 +6,8 @@
 
 * Added ContactUs.require_subject setting in order to for the subject with the contact form. [Jeff Dutil]
 
+* Formtastic dependency updated to >= 2.1.0 in order to fix commit_button deprecation. [Jeff Dutil]
+
 *ContactUs 0.1.5 (January 6th, 2012)*
 
 * Added Chinese zh locale [kinopyo]
