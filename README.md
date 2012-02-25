@@ -23,7 +23,7 @@ If you don't want to have Formtastic as a dependency there is a fork of this pro
 
 In your `Gemfile`, add the following dependencies:
 
-    gem 'contact_us', '~> 0.1.5'
+    gem 'contact_us', '~> 0.2.0'
 
 From `Rails.root` run:
 
