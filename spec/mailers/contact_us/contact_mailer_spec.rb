@@ -34,6 +34,10 @@ describe ContactUs::ContactMailer do
         @mailer.from.should eql([@contact.email])
       end
 
+      it "should use the users email in the reply_to field" do
+        @mailer.reply_to.should eql([@contact.email])
+      end
+
       it "should have users email in the subject line" do
         @mailer.subject.should eql("Contact Us message from #{@contact.email}")
       end
