@@ -59,8 +59,8 @@ Or you may run the generators for each specific component you would like to upda
 The generator copies the view files to `app/views/contact_us`, and you can customize them to suit your needs.  If you would like to add a name or subject field to the form you may simply
 set the options to true within the contact_us initializer located at `config/initializers/contact_us.rb`:
 
-    config.name = true
-    config.subject = true
+    config.require_name = true
+    config.require_subject = true
 
 You may also update your locales under `config/locales/contact_us.en.yml` or create your own.  Please feel free to submit your own locales so that other users will hopefully find this gem more useful.
 
