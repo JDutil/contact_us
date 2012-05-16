@@ -66,7 +66,7 @@ You may also update your locales under `config/locales/contact_us.en.yml` or cre
 
 ## USAGE
 
-Visit your website and navigate to `/contact_us` to see the form in action.
+Visit your website and navigate to `/contact-us` to see the form in action.
 
 ## INTEGRATION TESTS
 

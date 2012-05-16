@@ -1,3 +1,7 @@
+*ContactUs 0.3.0 (May 15th 2012)*
+
+* Changed route to /contact-us from /contract_us for seo. [Jeff Dutil]
+
 *ContactUs 0.2.1 (May 4th 2012)*
 
 * Use the users provided email address in the email notifications reply_to field. [Jeff Dutil]
