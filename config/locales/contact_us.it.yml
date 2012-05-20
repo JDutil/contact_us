@@ -9,13 +9,17 @@ it:
         sent_by_name: "Sent by %{name} from %{email}"
         subject: "Contact Us message from %{email}"
     contacts:
-      new:
+      new: &new
         contact_us: "Contattaci"
         email: "Email"
         message: "Messaggio"
         name: "Name"
         subject: "Subject"
         submit: "Inviare"
+      new_formtastic:
+        <<: *new
+      new_simple_form:
+        <<: *new
     notices:
       error: "Devi inserire entrambi i campi."
       success: "La mail di contatto è stata inviata."

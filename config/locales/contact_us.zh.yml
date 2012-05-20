@@ -9,13 +9,17 @@ zh:
         sent_by_name: "Sent by %{name} from %{email}"
         subject: "Contact Us message from %{email}"
     contacts:
-      new:
+      new: &new
         contact_us: "联系我们"
         email: "邮箱"
         message: "消息"
         name: "Name"
         subject: "Subject"
         submit: "发送"
+      new_formtastic:
+        <<: *new
+      new_simple_form:
+        <<: *new
     notices:
       error: "请正确输入邮箱与信息。"
       success: "邮件已成功发送。"

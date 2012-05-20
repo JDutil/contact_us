@@ -9,13 +9,17 @@ en:
         sent_by_name: "Sent by %{name} from %{email}"
         subject: "Contact Us message from %{email}"
     contacts:
-      new:
+      new: &new
         contact_us: "Contact Us"
         email: "Email"
         message: "Message"
         name: "Name"
         subject: "Subject"
         submit: "Submit"
+      new_formtastic:
+        <<: *new
+      new_simple_form:
+        <<: *new
     notices:
       error: "You must enter both fields."
       success: "Contact email was successfully sent."
