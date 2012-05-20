@@ -13,6 +13,9 @@ module ContactUs
   # Enable or Disable subject field.
   mattr_accessor :require_subject
 
+  # Formtastic or SimpleForm
+  mattr_accessor :form_gem
+
   # Default way to setup ContactUs. Run rake contact_us:install to create
   # a fresh initializer with all configuration values.
   def self.setup

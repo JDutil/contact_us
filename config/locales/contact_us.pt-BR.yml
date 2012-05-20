@@ -9,13 +9,17 @@ pt-BR:
         sent_by_name: "Sent by %{name} from %{email}"
         subject: "Contact Us message from %{email}"
     contacts:
-      new:
+      new: &new
         contact_us: "Contate-nos"
         email: "Email"
         message: "Messagem"
         name: "Name"
         subject: "Subject"
         submit: "Enviar"
+      new_formtastic:
+        <<: *new
+      new_simple_form:
+        <<: *new
     notices:
       error: "Você deve preencher os campos."
       success: "Email de contato foi enviado com sucesso."
