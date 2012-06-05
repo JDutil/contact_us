@@ -59,6 +59,8 @@ In order to use a Formtastic compatible template to hook into your custom form s
 
     config.form_gem = 'formtastic'
 
+* By default the HTML should match that produced by Formtastic, but to ensure it is up to date you should set Formtastic.
+
 ### SimpleForm
 
 In order to use a SimpleForm compatible template to hook into your custom form styles configure `config/initializers/contact_us.rb`:

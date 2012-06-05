@@ -4,7 +4,6 @@ describe 'Contact Us page' do
 
   after do
     ActionMailer::Base.deliveries = []
-    ContactUs.form_gem = 'formtastic'
     ContactUs.mailer_from = nil
     ContactUs.mailer_to = nil
     ContactUs.require_name = false
@@ -23,7 +22,7 @@ describe 'Contact Us page' do
       page.should have_selector "textarea#contact_us_contact_message"
       page.should_not have_selector "input#contact_us_contact_name"
       page.should_not have_selector "input#contact_us_contact_subject"
-      page.should have_selector "input#contact_us_contact_submit"
+      page.should have_selector "input.submit"
     end
   end
 
