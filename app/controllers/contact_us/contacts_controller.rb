@@ -17,11 +17,13 @@ class ContactUs::ContactsController < ApplicationController
   end
 
   protected
+
     def render_new_page
-      if "simple_form" == ContactUs.form_gem
-        render 'new_simple_form'
+      case ContactUs.form_gem
+      when 'formtastic'  then render 'new_formtastic'
+      when 'simple_form' then render 'new_simple_form'
       else
-        render "new_formtastic"
+        render 'new'
       end
     end
 

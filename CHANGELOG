@@ -1,3 +1,9 @@
+*ContactUs 0.4.0 (Unreleased)*
+
+* Add default rails form helper support and remove Formtastic dependency. [Jeff Dutil]
+
+* Added support for SimpleForm. [flyerhzm]
+
 *ContactUs 0.3.0 (May 15th 2012)*
 
 * Changed route to /contact-us from /contract_us for seo. [Jeff Dutil]

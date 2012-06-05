@@ -20,6 +20,8 @@ ContactUs.setup do |config|
   config.require_subject = false
 
   # Configure the form gem to use.
-  config.form_gem = "formtastic"
+  # Example:
+  # config.form_gem = 'formtastic
+  config.form_gem = nil
 
 end

@@ -1,0 +1,26 @@
+<h2><%= t('.contact_us') %></h2>
+<%= form_for @contact, :url => contacts_path, :html => {:class => 'formtastic'} do |f| %>
+  <% if ContactUs.require_name %>
+    <li class='string required' id='contact_us_contact_name_input'>
+      <%= f.label :name, (t('.name') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+      <%= f.text_field :name %>
+    </li>
+  <% end %>
+  <li class='string required' id='contact_us_contact_email_input'>
+    <%= f.label :email, (t('.email') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+    <%= f.text_field :email %>
+  </li>
+  <% if ContactUs.require_subject %>
+    <li class='string required' id='contact_us_contact_subject_input'>
+      <%= f.label :subject, (t('.subject') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+      <%= f.text_field :subject %>
+    </li>
+  <% end %>
+  <li class='text required' id='contact_us_contact_message_input'>
+    <%= f.label :message, (t('.message') + content_tag(:abbr, '*', :class => 'required')).html_safe %>
+    <%= f.text_area :message %>
+  </li>
+  <li class='commit'>
+    <%= f.submit :submit, :alt => t('.submit'), :class => 'submit create', :label => t('.submit'), :title => t('.submit') %>
+  </li>
+<% end %>

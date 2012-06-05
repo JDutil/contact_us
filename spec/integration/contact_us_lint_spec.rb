@@ -4,6 +4,7 @@ describe 'Contact Us page' do
 
   after do
     ActionMailer::Base.deliveries = []
+    ContactUs.form_gem = 'formtastic'
     ContactUs.mailer_from = nil
     ContactUs.mailer_to = nil
     ContactUs.require_name = false

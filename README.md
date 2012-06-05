@@ -12,18 +12,18 @@ There is also a demo application showing how the ContactUs form works:
 
 ## REQUIREMENTS
 
-Contact Us requires the Formtastic Gem.  Read more about Formtastic @ https://github.com/justinfrench/formtastic
+Contact Us requires:
 
-I used Formtastic as a dependency to keep things simple, and hook into your apps custom Formtastic stylesheets.
-People have different tastes for their html / css markup, and I find Formtastic to be a great standardized and reusable way to build forms across apps.
+* Ruby >= 1.8.7 (will soon only support > 1.9.2)
+* Rails >= 3.0.0
 
-If you don't want to have Formtastic as a dependency there is a fork of this project without it [here](https://github.com/sch1zo/contact_us).
+It is also recommended to use Formtastic or SimpleForm (see configuration) in order to hook into your apps custom form builders.
 
 ## INSTALLATION
 
 In your `Gemfile`, add the following dependencies:
 
-    gem 'contact_us', '~> 0.3.0'
+    gem 'contact_us', '~> 0.4.0.beta'
 
 From `Rails.root` run:
 
@@ -43,6 +43,28 @@ You may also specify an email address for the notification emails from field:
 
     config.mailer_from = "dontreply@yourdomain.com"
 
+## CONFIGURATION
+
+The generator copies the view files to `app/views/contact_us`, and you can customize them to suit your needs.  If you would like to add a name or subject field to the form you may simply
+set the options to true within the contact_us initializer located at `config/initializers/contact_us.rb`:
+
+    config.require_name = true
+    config.require_subject = true
+
+You may also update your locales under `config/locales/contact_us.en.yml` or create your own.  Please feel free to submit your own locales so that other users will hopefully find this gem more useful.
+
+### Formtastic
+
+In order to use a Formtastic compatible template to hook into your custom form styles configure `config/initializers/contact_us.rb`:
+
+    config.form_gem = 'formtastic'
+
+### SimpleForm
+
+In order to use a SimpleForm compatible template to hook into your custom form styles configure `config/initializers/contact_us.rb`:
+
+    config.form_gem = 'simple_form'
+
 ## UPGRADING
 
 When upgrading from 0.1.x to 0.2.x you should rerun the install generator to install the new settings, views, and locale updates:
@@ -53,16 +75,6 @@ Or you may run the generators for each specific component you would like to upda
 
     $ bundle exec rake contact_us:copy_locales
     $ bundle exec rake contact_us:copy_views
-
-## CONFIGURATION
-
-The generator copies the view files to `app/views/contact_us`, and you can customize them to suit your needs.  If you would like to add a name or subject field to the form you may simply
-set the options to true within the contact_us initializer located at `config/initializers/contact_us.rb`:
-
-    config.require_name = true
-    config.require_subject = true
-
-You may also update your locales under `config/locales/contact_us.en.yml` or create your own.  Please feel free to submit your own locales so that other users will hopefully find this gem more useful.
 
 ## USAGE
 
@@ -97,6 +109,7 @@ Here are some ways *you* can contribute:
 
 ## TODO
 
-* Add new language translations
+* Add new language translations.
+* Stop copying views/locales by default.
 
 Copyright (c) 2011 Jeff Dutil, released under the [MIT license](https://github.com/jdutil/contact_us/tree/master/MIT-LICENSE).
