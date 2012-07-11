@@ -4,6 +4,8 @@
 
 * Added support for SimpleForm. [flyerhzm]
 
+* Added Japanese locale. [yosiyuki]
+
 *ContactUs 0.3.0 (May 15th 2012)*
 
 * Changed route to /contact-us from /contract_us for seo. [Jeff Dutil]
