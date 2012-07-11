@@ -1,0 +1,25 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  contact_us:
+    contact_mailer:
+      contact_email:
+        sent_by_contact_form: "お問い合せメールを送信しました : %{email}"
+        sent_by_name: "%{name} さんがお問い合せメールを送信しました : %{email}"
+        subject: "お問い合わせメール : %{email}"
+    contacts:
+      new: &new
+        contact_us: "お問い合わせ"
+        email: "メールアドレス"
+        message: "お問い合せ内容"
+        name: "お名前"
+        subject: "件名"
+        submit: "送信する"
+      new_formtastic:
+        <<: *new
+      new_simple_form:
+        <<: *new
+    notices:
+      error: "すべての項目を入力してください。"
+      success: "お問い合わせを送信しました。"
