@@ -23,7 +23,7 @@ It is also recommended to use Formtastic or SimpleForm (see configuration) in or
 
 In your `Gemfile`, add the following dependencies:
 
-    gem 'contact_us', '~> 0.4.0.beta'
+    gem 'contact_us', '~> 0.4.0'
 
 From `Rails.root` run:
 

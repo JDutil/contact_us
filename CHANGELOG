@@ -1,4 +1,4 @@
-*ContactUs 0.4.0 (Unreleased)*
+*ContactUs 0.4.0 (Oct 29th 2012)*
 
 * Add default rails form helper support and remove Formtastic dependency. [Jeff Dutil]
 
