@@ -7,8 +7,6 @@ module ContactUs
 
         def run
           copy_initializer_file
-          copy_locales_files
-          copy_view_files
           puts "Done!"
         end
 

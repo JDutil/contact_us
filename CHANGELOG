@@ -6,6 +6,10 @@
 
 * Added Japanese locale. [yosiyuki]
 
+* Added French locale. [bgantaume]
+
+* No longer copy default views & locales during installation.  Copy manually with rake tasks when wanting to customize now. [Jeff Dutil]
+
 *ContactUs 0.3.0 (May 15th 2012)*
 
 * Changed route to /contact-us from /contract_us for seo. [Jeff Dutil]
