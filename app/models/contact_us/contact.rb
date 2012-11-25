@@ -4,11 +4,10 @@ class ContactUs::Contact
 
   attr_accessor :email, :message, :name, :subject
 
-  validates :email,   :format => { :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i },
-                      :presence => true
-  validates :message, :presence => true
-  validates :name,    :presence => {:if => Proc.new{ContactUs.require_name}}
-  validates :subject, :presence => {:if => Proc.new{ContactUs.require_subject}}
+  validates_email_format_of :email, :presence => true
+  validates_presence_of :message
+  validates_presence_of :name,    :if => Proc.new{ContactUs.require_name}
+  validates_presence_of :subject, :if => Proc.new{ContactUs.require_subject}
 
   def initialize(attributes = {})
     attributes.each do |key, value|
@@ -28,4 +27,8 @@ class ContactUs::Contact
     false
   end
 
+  def self.add_attribute attr, validations
+    attr_accessor attr
+    validates attr, validations
+  end
 end

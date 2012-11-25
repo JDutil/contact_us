@@ -27,4 +27,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "simple_form"
 
   s.add_runtime_dependency "rails", ">= 3.0.0"
+  s.add_runtime_dependency "validates_email_format_of", "~> 1.5.3"
 end
