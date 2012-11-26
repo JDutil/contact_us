@@ -1,3 +1,5 @@
+require 'validates_email_format_of'
+
 class ContactUs::Contact
   include ActiveModel::Conversion
   include ActiveModel::Validations
