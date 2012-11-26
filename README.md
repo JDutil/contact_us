@@ -121,6 +121,12 @@ Here are some ways *you* can contribute:
 * by resolving [issues](https://github.com/jdutil/contact_us/issues)
 * by reviewing patches
 
+## TESTING
+
+In order to run the spec suite:
+
+    $ bundle exec rspec spec
+
 ## TODO
 
 * Add new language translations.
