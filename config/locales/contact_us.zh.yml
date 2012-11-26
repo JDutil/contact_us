@@ -16,9 +16,7 @@ zh:
         name: "Name"
         subject: "Subject"
         submit: "发送"
-      new_formtastic:
-        <<: *new
-      new_simple_form:
+      new_form:
         <<: *new
     notices:
       error: "请正确输入邮箱与信息。"

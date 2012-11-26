@@ -16,9 +16,7 @@ es:
         name: "Name"
         subject: "Subject"
         submit: "Enviar"
-      new_formtastic:
-        <<: *new
-      new_simple_form:
+      new_form:
         <<: *new
     notices:
       error: "Debes de ingresar ambos campos."
