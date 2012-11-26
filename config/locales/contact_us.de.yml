@@ -16,9 +16,7 @@ de:
         name: "Name"
         subject: "Subject"
         submit: "Abschicken"
-      new_formtastic:
-        <<: *new
-      new_simple_form:
+      new_form:
         <<: *new
     notices:
       error: "Beide Felder müssen ausgefüllt werden."

@@ -16,9 +16,7 @@ it:
         name: "Name"
         subject: "Subject"
         submit: "Inviare"
-      new_formtastic:
-        <<: *new
-      new_simple_form:
+      new_form:
         <<: *new
     notices:
       error: "Devi inserire entrambi i campi."

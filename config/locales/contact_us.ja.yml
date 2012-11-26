@@ -16,9 +16,7 @@ ja:
         name: "お名前"
         subject: "件名"
         submit: "送信する"
-      new_formtastic:
-        <<: *new
-      new_simple_form:
+      new_form:
         <<: *new
     notices:
       error: "すべての項目を入力してください。"

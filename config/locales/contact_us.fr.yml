@@ -16,9 +16,7 @@ fr:
         name: "Nom"
         subject: "Sujet"
         submit: "Envoyer"
-      new_formtastic:
-        <<: *new
-      new_simple_form:
+      new_form:
         <<: *new
     notices:
       error: "Merci de saisir les deux champs."
