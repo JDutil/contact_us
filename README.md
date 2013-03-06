@@ -1,4 +1,4 @@
-# Contact Us [![Build Status](https://secure.travis-ci.org/jdutil/contact_us.png)](http://travis-ci.org/jdutil/contact_us) [![Dependency Status](https://gemnasium.com/jdutil/contact_us.png?travis)](https://gemnasium.com/jdutil/contact_us) [![Click here to lend your support to: ContactUs and make a donation at www.pledgie.com !](https://www.pledgie.com/campaigns/16807.png?skin_name=chrome)][pledgie]
+# Contact Us [![Build Status](https://secure.travis-ci.org/jdutil/contact_us.png)](http://travis-ci.org/jdutil/contact_us) [![Dependency Status](https://gemnasium.com/jdutil/contact_us.png?travis)](https://gemnasium.com/jdutil/contact_us) [![Click here to lend your support to: ContactUs and make a donation at www.pledgie.com !](http://www.pledgie.com/campaigns/16807.png?skin_name=chrome)][pledgie]
 A Rails 3+ Engine providing a basic contact form.  
 
 [travis]: http://travis-ci.org/jdutil/contact_us
@@ -23,45 +23,61 @@ It is also recommended to use Formtastic or SimpleForm (see configuration) in or
 
 In your `Gemfile`, add the following dependencies:
 
-    gem 'contact_us', '~> 0.4.0'
+```ruby
+gem 'contact_us', '~> 0.4.0'
+```
 
-From `Rails.root` run:
+From `Rails.root` in your Terminal run:
 
-    $ bundle
-    $ bundle exec rake contact_us:install
+```shell
+bundle
+bundle exec rake contact_us:install
+```
 
 In `config/initializers/contact_us.rb` modify:
 
-    config.mailer_to = "contact@please-change-me.com"
+```ruby
+config.mailer_to = "contact@please-change-me.com"
+```
 
 Change to the email address you would like to receive the form submissions at for example:
 
-    config.mailer_to = "contact@yourdomain.com"
+```ruby
+config.mailer_to = "contact@yourdomain.com"
+```
 
 By default the emails from field will be the email entered by the user to easily reply, but this may not be allowed if your required to verify your sending email addresses.
 You may also specify an email address for the notification emails from field:
 
-    config.mailer_from = "dontreply@yourdomain.com"
+```ruby
+config.mailer_from = "dontreply@yourdomain.com"
+```
 
 ## CONFIGURATION
 
 If you would like to add a name or subject field to the form you may simply
 set the options to true within the contact_us initializer located at `config/initializers/contact_us.rb`:
 
-    config.require_name = true
-    config.require_subject = true
+```ruby
+config.require_name = true
+config.require_subject = true
+```
 
 ### Views
 
 To copy the view files to `app/views/contact_us`, and customize them to suit your needs run:
 
-    bundle exec rake contact_us:copy_views
+```shell
+bundle exec rake contact_us:copy_views
+```
 
 ### Locales
 
 To copy the locale files to `config/locales/contact_us.*.yml`, and customize them to suit your needs run:
 
-    bundle exec rake contact_us:copy_locales
+```shell
+bundle exec rake contact_us:copy_locales
+```
 
 Please feel free to submit your own locales so that other users will hopefully find this gem more useful in your language.
 
@@ -69,7 +85,9 @@ Please feel free to submit your own locales so that other users will hopefully f
 
 In order to use a Formtastic compatible template to hook into your custom form styles configure `config/initializers/contact_us.rb`:
 
-    config.form_gem = 'formtastic'
+```ruby
+config.form_gem = 'formtastic'
+```
 
 * By default the HTML should match that produced by Formtastic, but to ensure it is up to date you should set Formtastic.
 
@@ -77,18 +95,24 @@ In order to use a Formtastic compatible template to hook into your custom form s
 
 In order to use a SimpleForm compatible template to hook into your custom form styles configure `config/initializers/contact_us.rb`:
 
-    config.form_gem = 'simple_form'
+```ruby
+config.form_gem = 'simple_form'
+```
 
 ## UPGRADING
 
 When upgrading from 0.1.x to 0.2.x you should rerun the install generator to install the new settings, views, and locale updates:
 
-    $ bundle exec rake contact_us:install
+```shell
+bundle exec rake contact_us:install
+```
 
 Or you may run the generators for each specific component you would like to update, which is quite useful when upgrading during patch releases for example from 0.2.0 to 0.2.1:
 
-    $ bundle exec rake contact_us:copy_locales
-    $ bundle exec rake contact_us:copy_views
+```shell
+bundle exec rake contact_us:copy_locales
+bundle exec rake contact_us:copy_views
+```
 
 ## USAGE
 
@@ -125,7 +149,9 @@ Here are some ways *you* can contribute:
 
 In order to run the spec suite:
 
-    $ bundle exec rspec spec
+```shell
+bundle exec rspec spec
+```
 
 ## TODO
 
