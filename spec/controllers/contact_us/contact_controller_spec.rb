@@ -4,6 +4,10 @@ describe ContactUs::ContactsController do
 
   describe 'create' do
 
+    before do
+      ContactUs.mailer_to = 'test@example.com'
+    end
+
     it 'should redirect with success message if valid contact' do
       post :create, :contact_us_contact => { :email => 'test@test.com', :message => 'test' }
       assigns(:contact).valid?.should eql(true)
