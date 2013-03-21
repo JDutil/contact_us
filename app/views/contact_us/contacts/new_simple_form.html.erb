@@ -4,5 +4,5 @@
   <%= f.input :email, :label => t('.email') %>
   <%= f.input :subject, :label => t('.subject') if ContactUs.require_subject %>
   <%= f.input :message, :as => :text, :label => t('.message') %>
-  <%= f.button :submit, :label => t('.submit'), :button_html => { :alt => t('.submit'), :id => 'contact_us_contact_submit', :title => t('.submit') } %>
+  <%= f.button :submit, :label => t('.submit'), :alt => t('.submit'), :id => 'contact_us_contact_submit', :title => t('.submit') %>
 <% end %>
