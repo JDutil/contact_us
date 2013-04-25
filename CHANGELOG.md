@@ -1,3 +1,7 @@
+## ContactUs 0.5.0 (Unreleased)
+
+* Require Ruby >= 1.9.3 going forward. [Jeff Dutil]
+
 ## ContactUs 0.4.0 (Oct 29th 2012)
 
 * Add default rails form helper support and remove Formtastic dependency. [Jeff Dutil]
