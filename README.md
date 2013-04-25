@@ -128,6 +128,18 @@ Simply copy the `spec/integration/contact_us_lint_spec.rb` file, and add it to y
 
 Please report any bugs or feature requests to the Github issues page @ https://github.com/jdutil/contact_us/issues
 
+## TESTING
+
+In order to run the spec suite:
+
+```shell
+bundle exec rspec spec
+```
+
+## TODO
+
+* Add new language translations.
+
 ## CONTRIBUTING
 
 In the spirit of [free software](http://www.fsf.org/licensing/essays/free-sw.html), **everyone** is encouraged to help improve this project.
@@ -145,16 +157,8 @@ Here are some ways *you* can contribute:
 * by resolving [issues](https://github.com/jdutil/contact_us/issues)
 * by reviewing patches
 
-## TESTING
+## Donating
 
-In order to run the spec suite:
+Bitcoin donations may be sent to: 1Jz1rWG6HSWb6eBGgTyhANrkVxmzY4YPKS
 
-```shell
-bundle exec rspec spec
-```
-
-## TODO
-
-* Add new language translations.
-
-Copyright (c) 2011 Jeff Dutil, released under the [MIT license](https://github.com/jdutil/contact_us/tree/master/MIT-LICENSE).
+Copyright (c) 2011-2013 Jeff Dutil, released under the [MIT license](https://github.com/jdutil/contact_us/tree/master/MIT-LICENSE).
