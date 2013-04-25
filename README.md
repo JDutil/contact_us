@@ -14,7 +14,7 @@ There is also a demo application showing how the ContactUs form works:
 
 Contact Us requires:
 
-* Ruby >= 1.8.7 (will soon only support > 1.9.2)
+* Ruby >= 1.9.3
 * Rails >= 3.0.0
 
 It is also recommended to use Formtastic or SimpleForm (see configuration) in order to hook into your apps custom form builders.
