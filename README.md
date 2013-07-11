@@ -63,6 +63,11 @@ config.require_name = true
 config.require_subject = true
 ```
 
+To redirect to a specific URL after a successful form submission:
+```ruby
+config.success_redirect = '/contact-success'
+```
+
 ### Views
 
 To copy the view files to `app/views/contact_us`, and customize them to suit your needs run:
