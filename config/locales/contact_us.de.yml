@@ -6,15 +6,15 @@ de:
     contact_mailer:
       contact_email:
         sent_by_contact_form: "Gesendet durch das Kontaktformular. %{email}"
-        sent_by_name: "Sent by %{name} from %{email}"
-        subject: "Contact Us message from %{email}"
+        sent_by_name: "Nachricht von %{name} mit der E-Mail Adresse %{email}"
+        subject: "Nachricht von %{email}"
     contacts:
       new: &new
         contact_us: "Kontaktiere Uns"
-        email: "Email"
+        email: "E-Mail"
         message: "Nachricht"
         name: "Name"
-        subject: "Subject"
+        subject: "Betreff"
         submit: "Abschicken"
       new_formtastic:
         <<: *new
