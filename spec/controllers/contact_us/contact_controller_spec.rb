@@ -15,6 +15,14 @@ describe ContactUs::ContactsController do
       response.should redirect_to('/')
     end
 
+    it 'should redirect to custom URL with success message if valid contact' do
+      ContactUs.success_redirect = '/success'
+      post :create, :contact_us_contact => { :email => 'test@test.com', :message => 'test' }
+      assigns(:contact).valid?.should eql(true)
+      flash[:notice].should eql('Contact email was successfully sent.')
+      response.should redirect_to('/success')
+    end
+
     it 'should render new with error message if invalid contact' do
       post :create, :contact_us_contact => { :email => 'test@test.com', :message => '' }
       assigns(:contact).valid?.should eql(false)

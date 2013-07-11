@@ -7,6 +7,7 @@ describe ContactUs do
     ContactUs.mailer_to = nil
     ContactUs.require_name = false
     ContactUs.require_subject = false
+    ContactUs.success_redirect = '/'
   end
 
   it "should be valid" do

@@ -16,6 +16,9 @@ module ContactUs
   # Formtastic or SimpleForm
   mattr_accessor :form_gem
 
+  # URL after a successful submission
+  mattr_accessor :success_redirect
+
   # Default way to setup ContactUs. Run rake contact_us:install to create
   # a fresh initializer with all configuration values.
   def self.setup
