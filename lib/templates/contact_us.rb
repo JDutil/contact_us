@@ -24,4 +24,7 @@ ContactUs.setup do |config|
   # config.form_gem = 'formtastic'
   config.form_gem = nil
 
+  # Configure the redirect URL after a successful submission
+  config.success_redirect = '/'
+
 end
