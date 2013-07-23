@@ -9,6 +9,7 @@ describe ContactUs::ContactsController do
     end
 
     it 'should redirect with success message if valid contact' do
+      ContactUs.success_redirect = nil
       post :create, :contact_us_contact => { :email => 'test@test.com', :message => 'test' }
       assigns(:contact).valid?.should eql(true)
       flash[:notice].should eql('Contact email was successfully sent.')
