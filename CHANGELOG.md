@@ -1,3 +1,7 @@
+## ContactUs 0.5.1 (Nov 19th 2013)
+
+* Require Rails >= 4 going forward. [Jeff Dutil]
+
 ## ContactUs 0.5.0 (Nov 19th 2013)
 
 * Require Ruby >= 1.9.3 going forward. [Jeff Dutil]
