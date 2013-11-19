@@ -1,6 +1,7 @@
-## ContactUs 0.5.0 (Unreleased)
+## ContactUs 0.5.0 (Nov 19th 2013)
 
 * Require Ruby >= 1.9.3 going forward. [Jeff Dutil]
+* Updates for Rails 4 compatibility [flyerhzm]
 
 ## ContactUs 0.4.0 (Oct 29th 2012)
 
