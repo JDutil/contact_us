@@ -24,7 +24,7 @@ It is also recommended to use Formtastic or SimpleForm (see configuration) in or
 In your `Gemfile`, add the following dependencies:
 
 ```ruby
-gem 'contact_us', '~> 0.4.0'
+gem 'contact_us', '~> 0.5.1'
 ```
 
 From `Rails.root` in your Terminal run:
