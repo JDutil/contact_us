@@ -1,0 +1,22 @@
+he:
+  contact_us:
+    contact_mailer:
+      contact_email:
+        sent_by_contact_form: "נשלח על ידי קונטקט פורם מאת %{email}"
+        sent_by_name: "נשלח על ידי %{name} מאת %{email}"
+        subject: "צור קשר, הודעה מאת %{email}"
+    contacts:
+      new: &new
+        contact_us: "צור קשר"
+        email: "מייל"
+        message: "הודעה"
+        name: "שם"
+        subject: "נושא"
+        submit: "שלח"
+      new_formtastic:
+        <<: *new
+      new_simple_form:
+        <<: *new
+    notices:
+      error: "הנך צריך למלא את שתי השדות."
+      success: "הטופס נשלח בהצלחה."
