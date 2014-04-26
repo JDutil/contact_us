@@ -22,6 +22,7 @@ describe ContactUs::ContactsController do
       assigns(:contact).valid?.should eql(true)
       flash[:notice].should eql('Contact email was successfully sent.')
       response.should redirect_to('/success')
+      ContactUs.success_redirect = '/'
     end
 
     it 'should render new with error message if invalid contact' do
