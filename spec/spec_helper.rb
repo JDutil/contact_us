@@ -41,4 +41,5 @@ Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each { |f| require f }
 
 RSpec.configure do |config|
   config.include RSpec::Matchers
+  config.infer_spec_type_from_file_location!
 end

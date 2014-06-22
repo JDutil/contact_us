@@ -1,3 +1,7 @@
+## ContactUs 0.5.3 (Jun 22nd 2014)
+
+* Updated line specs to Rspec 3 expect syntax.
+
 ## ContactUs 0.5.1 (Nov 19th 2013)
 
 * Require Rails >= 4 going forward. [Jeff Dutil]
