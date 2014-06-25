@@ -1,0 +1,24 @@
+# Localization file for Greek
+
+el:
+  contact_us:
+    contact_mailer:
+      contact_email:
+        sent_by_contact_form: "Εστάλη μέσω της φόρμας επικοινωνίας από τον/την %{email}"
+        sent_by_name: "Εστάλη από τον/την %{name} από τη διεύθυνση %{email}"
+        subject: "Μήνυμα φόρμας επικοινωνίας από %{email}"
+    contacts:
+      new: &new
+        contact_us: "Επικοινωνία"
+        email: "Διεύθυνση ηλεκτρονικού ταχυδρομείου"
+        message: "Μήνυμα"
+        name: "Όνομα"
+        subject: "Θέμα"
+        submit: "Αποστολή"
+      new_formtastic:
+        <<: *new
+      new_simple_form:
+        <<: *new
+    notices:
+      error: "Πρέπει να συμπληρώσετε και τα δύο πεδία."
+      success: "Το μήνυμά σας εστάλη επιτυχώς."
