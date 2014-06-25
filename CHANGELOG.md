@@ -1,3 +1,7 @@
+## ContactUs 0.5.4 (Jun 25th 2014)
+
+* Added Greek locale.
+
 ## ContactUs 0.5.3 (Jun 22nd 2014)
 
 * Updated line specs to Rspec 3 expect syntax.
