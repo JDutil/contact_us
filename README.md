@@ -7,7 +7,7 @@ A Rails 3+ Engine providing a basic contact form.
 
 There is also a demo application showing how the ContactUs form works:
 
-* [View Demo Form In Action](http://contact-us-demo.heroku.com)
+* [View Demo Form In Action](http://contact-us-demo.herokuapp.com)
 * [View Demo Applications Source Code](http://github.com/jdutil/contact_us_demo)
 
 ## REQUIREMENTS
