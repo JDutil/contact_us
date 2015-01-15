@@ -1,4 +1,4 @@
-# Contact Us [![Build Status](https://secure.travis-ci.org/jdutil/contact_us.png)](http://travis-ci.org/jdutil/contact_us) [![Dependency Status](https://gemnasium.com/jdutil/contact_us.png?travis)](https://gemnasium.com/jdutil/contact_us) [![Click here to lend your support to: ContactUs and make a donation at www.pledgie.com !](http://www.pledgie.com/campaigns/16807.png?skin_name=chrome)][pledgie]
+# Contact Us [![Build Status](https://secure.travis-ci.org/JDutil/contact_us.png)](http://travis-ci.org/JDutil/contact_us) [![Dependency Status](https://gemnasium.com/jdutil/contact_us.png?travis)](https://gemnasium.com/jdutil/contact_us) [![Click here to lend your support to: ContactUs and make a donation at www.pledgie.com !](http://www.pledgie.com/campaigns/16807.png?skin_name=chrome)][pledgie]
 A Rails 3+ Engine providing a basic contact form.  
 
 [travis]: http://travis-ci.org/jdutil/contact_us
@@ -127,7 +127,7 @@ Visit your website and navigate to `/contact-us` to see the form in action.
 
 Contact Us has 100% test coverage, and provides simple integration specs you can drop directly into your apps test suite if you use RSpec & Capybara.
 
-Simply copy the `spec/integration/contact_us_lint_spec.rb` file, and add it to your integration specs. 
+Simply copy the `spec/integration/contact_us_lint_spec.rb` file, and add it to your integration specs.
 
 ## ISSUES
 
