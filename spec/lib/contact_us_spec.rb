@@ -11,13 +11,13 @@ describe ContactUs do
   end
 
   it "should be valid" do
-    ContactUs.should be_a(Module)
+    expect(ContactUs).to be_a(Module)
   end
 
   describe 'setup block' do
     it 'should yield self' do
       ContactUs.setup do |config|
-        ContactUs.should eql(config)
+        expect(ContactUs).to eql(config)
       end
     end
   end
@@ -25,28 +25,28 @@ describe ContactUs do
   describe 'mailer_from' do
     it 'should be configurable' do
       ContactUs.mailer_from = "contact@please-change-me.com"
-      ContactUs.mailer_from.should eql("contact@please-change-me.com")
+      expect(ContactUs.mailer_from).to eql("contact@please-change-me.com")
     end
   end
 
   describe 'mailer_to' do
     it 'should be configurable' do
       ContactUs.mailer_to = "contact@please-change-me.com"
-      ContactUs.mailer_to.should eql("contact@please-change-me.com")
+      expect(ContactUs.mailer_to).to eql("contact@please-change-me.com")
     end
   end
 
   describe 'require_name' do
     it 'should be configurable' do
       ContactUs.require_name = true
-      ContactUs.require_name.should eql(true)
+      expect(ContactUs.require_name).to eql(true)
     end
   end
 
   describe 'require_subject' do
     it 'should be configurable' do
       ContactUs.require_subject = true
-      ContactUs.require_subject.should eql(true)
+      expect(ContactUs.require_subject).to eql(true)
     end
   end
 

@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_development_dependency "capybara",         "~> 2.0"
-  s.add_development_dependency "rspec-rails",      "~> 2.99"
+  s.add_development_dependency "rspec-rails",      "~> 3.1"
   s.add_development_dependency "shoulda-matchers", ">= 1.5.4"
   s.add_development_dependency "simplecov",        "~> 0.7"
   s.add_development_dependency "sqlite3",          "~> 1.3.5"

@@ -13,11 +13,11 @@ describe "Rake tasks" do
 
   before(:each) do
     @destination_root = File.expand_path("../../dummy", __FILE__)
-    File.exists?(@destination_root + "/config/initializers/contact_us.rb").should eql(false)
-    File.exists?(@destination_root + "/config/locales/contact_us.en.yml").should eql(false)
-    File.directory?(@destination_root + "/app/views/contact_us").should eql(false)
-    File.directory?(@destination_root + "/app/views/contact_us/contact_mailer").should eql(false)
-    File.directory?(@destination_root + "/app/views/contact_us/contacts").should eql(false)
+    expect(File.exists?(@destination_root + "/config/initializers/contact_us.rb")).to eql(false)
+    expect(File.exists?(@destination_root + "/config/locales/contact_us.en.yml")).to eql(false)
+    expect(File.directory?(@destination_root + "/app/views/contact_us")).to eql(false)
+    expect(File.directory?(@destination_root + "/app/views/contact_us/contact_mailer")).to eql(false)
+    expect(File.directory?(@destination_root + "/app/views/contact_us/contacts")).to eql(false)
   end
 
   describe "contact_us:install" do
@@ -27,7 +27,7 @@ describe "Rake tasks" do
     end
 
     it "creates initializer file" do
-      File.exists?(File.join(@destination_root + "/config/initializers/contact_us.rb")).should eql(true)
+      expect(File.exists?(File.join(@destination_root + "/config/initializers/contact_us.rb"))).to eql(true)
     end
 
   end
@@ -38,7 +38,7 @@ describe "Rake tasks" do
     end
 
     it "creates locales files" do
-      File.exists?(File.join(@destination_root + "/config/locales/contact_us.en.yml")).should eql(true)
+      expect(File.exists?(File.join(@destination_root + "/config/locales/contact_us.en.yml"))).to eql(true)
     end
   end
 
@@ -49,9 +49,9 @@ describe "Rake tasks" do
     end
 
     it "creates view files" do
-      File.directory?(@destination_root + "/app/views/contact_us").should eql(true)
-      File.directory?(@destination_root + "/app/views/contact_us/contact_mailer").should eql(true)
-      File.directory?(@destination_root + "/app/views/contact_us/contacts").should eql(true)
+      expect(File.directory?(@destination_root + "/app/views/contact_us")).to eql(true)
+      expect(File.directory?(@destination_root + "/app/views/contact_us/contact_mailer")).to eql(true)
+      expect(File.directory?(@destination_root + "/app/views/contact_us/contacts")).to eql(true)
     end
 
   end
