@@ -1,3 +1,8 @@
+## ContactUs 1.0.0 (Jan 15th 2015)
+
+* Fix Rails 4.2 deliver_later deprecation.
+* Require Ruby 2+
+
 ## ContactUs 0.5.4 (Jun 25th 2014)
 
 * Added Greek locale.

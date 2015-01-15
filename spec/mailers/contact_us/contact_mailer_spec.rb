@@ -47,13 +47,13 @@ describe ContactUs::ContactMailer do
       end
 
       it "should deliver successfully" do
-        lambda { ContactUs::ContactMailer.contact_email(@contact).deliver }.should_not raise_error
+        lambda { ContactUs::ContactMailer.contact_email(@contact).deliver_now }.should_not raise_error
       end
 
       describe "and delivered" do
 
         it "should be added to the delivery queue" do
-          lambda { ContactUs::ContactMailer.contact_email(@contact).deliver }.should change(ActionMailer::Base.deliveries,:size).by(1)
+          lambda { ContactUs::ContactMailer.contact_email(@contact).deliver_now }.should change(ActionMailer::Base.deliveries,:size).by(1)
         end
 
       end
