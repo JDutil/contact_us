@@ -1,0 +1,22 @@
+zh:
+  contact_us:
+    contact_mailer:
+      contact_email:
+        sent_by_contact_form: "由【聯絡我們】頁發送 %{email}"
+        sent_by_name: "由 %{name} 寄出 從 %{email}"
+        subject: "由 %{email} 寄出的訊息"
+    contacts:
+      new: &new
+        contact_us: "聯絡我們"
+        email: "電子郵件"
+        message: "訊息"
+        name: "姓名"
+        subject: "主題"
+        submit: "發送"
+      new_formtastic:
+        <<: *new
+      new_simple_form:
+        <<: *new
+    notices:
+      error: "請檢查是否正確填寫所有欄位。"
+      success: "訊息已成功送出。"
