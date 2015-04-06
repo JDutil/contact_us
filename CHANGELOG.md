@@ -1,3 +1,7 @@
+## ContactUs 1.0.1 (April 6th 2015)
+
+* Add Traditional Chinese zh-TW translations. [yuchunc]
+
 ## ContactUs 1.0.0 (Jan 15th 2015)
 
 * Fix Rails 4.2 deliver_later deprecation.
