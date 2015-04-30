@@ -1,4 +1,4 @@
-class ContactUs::ContactMailer < ActionMailer::Base
+class ContactUs::ContactMailer < ContactUs.parent_mailer ? ContactUs.parent_mailer.constantize : ActionMailer::Base
   def contact_email(contact)
     @contact = contact
 
