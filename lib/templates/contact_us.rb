@@ -27,4 +27,8 @@ ContactUs.setup do |config|
   # Configure the redirect URL after a successful submission
   config.success_redirect = '/'
 
+  # Configure the parent action mailer
+  # Example:
+  # config.parent_mailer = "ActionMailer::Base"
+
 end
