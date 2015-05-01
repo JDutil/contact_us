@@ -1,3 +1,7 @@
+## ContactUs 1.1.0 (May 1st 2015)
+
+* Configurable mailer inheritance. [https://github.com/JDutil/contact_us/pull/53]
+
 ## ContactUs 1.0.1 (April 6th 2015)
 
 * Add Traditional Chinese zh-TW translations. [yuchunc]
