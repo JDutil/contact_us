@@ -1,20 +1,20 @@
-# Sample localization file for English. Add more files in this directory for other locales.
+# Sample localization file for Spanish. Add more files in this directory for other locales.
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 es:
   contact_us:
     contact_mailer:
       contact_email:
-        sent_by_contact_form: "Enviado por el formulario de contacto. %{email}"
-        sent_by_name: "Sent by %{name} from %{email}"
-        subject: "Contact Us message from %{email}"
+        sent_by_contact_form: "Enviado por el formulario de contacto desde %{email}"
+        sent_by_name: "Enviado por %{name} con la dirección %{email}"
+        subject: "Mensaje de contacto de %{email}"
     contacts:
       new: &new
         contact_us: "Contactanos"
-        email: "Email"
+        email: "Correo electrónico"
         message: "Mensaje"
-        name: "Name"
-        subject: "Subject"
+        name: "Nombre"
+        subject: "Tema"
         submit: "Enviar"
       new_formtastic:
         <<: *new
