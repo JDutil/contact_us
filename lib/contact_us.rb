@@ -23,6 +23,9 @@ module ContactUs
   mattr_accessor :parent_mailer
   @@parent_mailer = "ActionMailer::Base"
 
+  # allows for a locale to appear in the path (e.g. /fr/contact-us OR /en/contact-us)
+  mattr_accessor :localize_routes
+
   # Default way to setup ContactUs. Run rake contact_us:install to create
   # a fresh initializer with all configuration values.
   def self.setup
