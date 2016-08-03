@@ -23,7 +23,7 @@ module ContactUs
   mattr_accessor :parent_mailer
   @@parent_mailer = "ActionMailer::Base"
 
-  # allows for a locale to appear in the path 
+  # allows for a locale to appear in the path
   #   (e.g. /fr/contact-us OR /en/contact-us)
   mattr_accessor :localize_routes
 
