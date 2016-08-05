@@ -44,4 +44,10 @@ RSpec.configure do |config|
   config.include RSpec::Matchers
   config.infer_spec_type_from_file_location!
   config.raise_errors_for_deprecations!
+
+  [:controller, :view, :request].each do |type|
+    config.include ::Rails::Controller::Testing::TestProcess, type: type
+    config.include ::Rails::Controller::Testing::TemplateAssertions, type: type
+    config.include ::Rails::Controller::Testing::Integration, type: type
+  end
 end
