@@ -6,6 +6,7 @@ ENV["RAILS_ENV"] = "test"
 require File.expand_path("../dummy/config/environment.rb",  __FILE__)
 require "rails/test_help"
 require "rspec/rails"
+require 'rails-controller-testing'
 require 'shoulda-matchers'
 
 unless defined?(Rubinius).present? or RUBY_VERSION == '1.8.7'
