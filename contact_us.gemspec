@@ -26,6 +26,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "sqlite3",          "~> 1.3.5"
   s.add_development_dependency "formtastic",       ">= 2.1.0"
   s.add_development_dependency "simple_form"
-
+  s.add_development_dependency 'rails-controller-testing'
   s.add_runtime_dependency "rails", ">= 4.2.0"
 end
