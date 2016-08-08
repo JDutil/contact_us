@@ -1,4 +1,4 @@
-## ContactUs 1.2.0 (?)
+## ContactUs 1.2.0 (Aug 8th 2016)
 
 * Bump required Ruby to 2.2.2
 * Add Arabic translation. [https://github.com/JDutil/contact_us/pull/59]
