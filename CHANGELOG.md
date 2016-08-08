@@ -2,6 +2,7 @@
 
 * Bump required Ruby to 2.2.2
 * Add Arabic translation. [https://github.com/JDutil/contact_us/pull/59]
+* Add optional I18n locale routing [https://github.com/JDutil/contact_us/pull/58]
 
 ## ContactUs 1.1.0 (May 1st 2015)
 
