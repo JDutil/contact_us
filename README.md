@@ -68,6 +68,12 @@ To redirect to a specific URL after a successful form submission:
 config.success_redirect = '/contact-success'
 ```
 
+If you're using I18n localization and would like to have the locale be a part of your paths 
+For example: /en/contact-us OR /fr/contact-us OR /en-UK/contact-us
+```ruby
+config.localize_routes = true
+```
+
 ### Views
 
 To copy the view files to `app/views/contact_us`, and customize them to suit your needs run:
@@ -85,6 +91,9 @@ bundle exec rake contact_us:copy_locales
 ```
 
 Please feel free to submit your own locales so that other users will hopefully find this gem more useful in your language.
+
+If you would like to include the locale in your paths (e.g. /en/contact-us), set the localize_routes
+parameter to true in your initializer (see the configuration section above)
 
 ### Formtastic
 
