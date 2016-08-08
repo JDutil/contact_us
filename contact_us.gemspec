@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.summary     = %q{Gem providing simple Contact Us functionality with a Rails 3+ Engine.}
   s.description = %q{A Rails 3+ Engine providing a basic contact form.  I used Formtastic to keep things simple, and to hook into your apps custom Formtastic stylesheets.}
 
-  s.required_ruby_version = '>= 2.0.0'
+  s.required_ruby_version = '>= 2.2.2'
   s.rubyforge_project = "contact_us"
 
   s.files         = `git ls-files`.split("\n")
@@ -26,6 +26,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "sqlite3",          "~> 1.3.5"
   s.add_development_dependency "formtastic",       ">= 2.1.0"
   s.add_development_dependency "simple_form"
-
+  s.add_development_dependency 'rails-controller-testing'
   s.add_runtime_dependency "rails", ">= 4.2.0"
 end

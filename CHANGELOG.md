@@ -1,3 +1,8 @@
+## ContactUs 1.2.0 (?)
+
+* Bump required Ruby to 2.2.2
+* Add Arabic translation. [https://github.com/JDutil/contact_us/pull/59]
+
 ## ContactUs 1.1.0 (May 1st 2015)
 
 * Configurable mailer inheritance. [https://github.com/JDutil/contact_us/pull/53]
