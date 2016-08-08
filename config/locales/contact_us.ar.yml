@@ -1,0 +1,25 @@
+# Sample localization file for Arabic. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ar:
+  contact_us:
+    contact_mailer:
+      contact_email:
+        sent_by_contact_form: "تم إرساله عبر نموذج اتصل بنا من %{email}"
+        sent_by_name: "أُرسل من %{name} بواسطة %{email}"
+        subject: "رسالة اتصل بنا من %{email}"
+    contacts:
+      new: &new
+        contact_us: "اتصل بنا"
+        email: "البريد الإلكتروني"
+        message: "الرسالة"
+        name: "الاسم"
+        subject: "الموضوع"
+        submit: "إرسال"
+      new_formtastic:
+        <<: *new
+      new_simple_form:
+        <<: *new
+    notices:
+      error: "يجب إدخال كلا الحقلين."
+      success: "تم إرسال نموذج التواصل بنجاح."
