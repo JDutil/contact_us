@@ -66,9 +66,11 @@ config.require_subject = true
 To redirect to a specific URL after a successful form submission:
 ```ruby
 config.success_redirect = '/contact-success'
+```
 
 If you're using I18n localization and would like to have the locale be a part of your paths 
 For example: /en/contact-us OR /fr/contact-us OR /en-UK/contact-us
+```ruby
 config.localize_routes = true
 ```
 
