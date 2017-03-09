@@ -28,4 +28,8 @@ class ContactUs::Contact
     false
   end
 
+  def self.add_attribute attr, validations
+    attr_accessor attr
+    validates attr, validations
+  end
 end
