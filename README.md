@@ -1,9 +1,8 @@
-# Contact Us [![Build Status](https://secure.travis-ci.org/JDutil/contact_us.png)](http://travis-ci.org/JDutil/contact_us) [![Dependency Status](https://gemnasium.com/jdutil/contact_us.png?travis)](https://gemnasium.com/jdutil/contact_us) [![Click here to lend your support to: ContactUs and make a donation at www.pledgie.com !](http://www.pledgie.com/campaigns/16807.png?skin_name=chrome)][pledgie]
-A Rails 3+ Engine providing a basic contact form.  
+# Contact Us [![Build Status](https://secure.travis-ci.org/JDutil/contact_us.png)](http://travis-ci.org/JDutil/contact_us)
+
+A Rails 3+ Engine providing a basic contact form.
 
 [travis]: http://travis-ci.org/jdutil/contact_us
-[gemnasium]: https://gemnasium.com/jdutil/contact_us
-[pledgie]: http://www.pledgie.com/campaigns/16807
 
 There is also a demo application showing how the ContactUs form works:
 
@@ -64,12 +63,14 @@ config.require_subject = true
 ```
 
 To redirect to a specific URL after a successful form submission:
+
 ```ruby
 config.success_redirect = '/contact-success'
 ```
 
-If you're using I18n localization and would like to have the locale be a part of your paths 
+If you're using I18n localization and would like to have the locale be a part of your paths
 For example: /en/contact-us OR /fr/contact-us OR /en-UK/contact-us
+
 ```ruby
 config.localize_routes = true
 ```
@@ -158,7 +159,7 @@ bundle exec rspec spec
 
 In the spirit of [free software](http://www.fsf.org/licensing/essays/free-sw.html), **everyone** is encouraged to help improve this project.
 
-Here are some ways *you* can contribute:
+Here are some ways _you_ can contribute:
 
 * by using prerelease versions
 * by reporting bugs
